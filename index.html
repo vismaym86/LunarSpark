@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abandoned but not Forgotten | LunarSpark</title>
+  <meta name="description" content="NASA equipment left behind on the Moon, Mars and deep space, and the stories they tell.">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div id="bar"></div>
+  <div id="glow" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="logo" href="index.html"><span class="lg"></span>LunarSpark</a>
+    <button class="burger" aria-expanded="false">Menu</button>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="fleet.html">The Fleet</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="about.html">About and Sources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="moon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <p class="team">LunarSpark: Echoes Beyond Earth</p>
+      <h1>Abandoned<br>but not <em>Forgotten</em></h1>
+      <p class="lede">Thirteen groups of NASA machines left behind on the Moon, Mars, asteroids and the dark between planets. Each finished its job, then fell silent. Follow their stories from first sketch to last signal.</p>
+      <p class="sig">Last signal: <b id="tick"></b></p>
+      <div class="btns">
+        <a class="go" href="fleet.html">Meet the machines</a>
+        <a class="go ghost" href="timeline.html">See the timeline</a>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div data-reveal><b data-count="13">0</b><span>machine stories</span></div>
+      <div data-reveal><b data-count="58">0</b><span>years of missions, 1966 to 2024</span></div>
+      <div data-reveal><b data-count="72">0</b><span>flights by Ingenuity on Mars</span></div>
+      <div data-reveal><b data-count="2600">0</b><span>planets found by Kepler</span></div>
+    </section>
+
+    <section>
+      <h2 data-reveal>Choose a destination</h2>
+      <div class="dest">
+      <a data-reveal class="tile Moon" style="--c: #7fe0f0" href="fleet.html?cat=Moon">
+        <small>4 stories</small>
+        <h3>The Moon</h3>
+        <p>Landers, rovers and stations from Apollo and Surveyor.</p>
+      </a>
+      <a data-reveal class="tile Mars" style="--c: #ff8a4c" href="fleet.html?cat=Mars">
+        <small>5 stories</small>
+        <h3>Mars</h3>
+        <p>Rovers, landers and a helicopter that explored the Red Planet.</p>
+      </a>
+      <a data-reveal class="tile Deep" style="--c: #b9a3ff" href="fleet.html?cat=Deep">
+        <small>4 stories</small>
+        <h3>Deep space</h3>
+        <p>Spacecraft that visited asteroids, dwarf planets and the outer Solar System.</p>
+      </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-reveal>Why leave anything behind?</h2>
+      <div class="three">
+        <article data-reveal><h3>Weight is everything</h3><p>Every kilogram costs fuel. Apollo crews left descent stages, rovers and tools so they could carry home lunar rocks.</p></article>
+        <article data-reveal><h3>Power runs out</h3><p>Dust buries solar panels, batteries freeze, plutonium decays and propellant ends. Most machines stop this way.</p></article>
+        <article data-reveal><h3>No way home</h3><p>No one has ever fetched an old rover. When the work is done, the cheapest choice is to leave it as a monument.</p></article>
+      </div>
+    </section>
+
+    <section class="cta" data-reveal>
+      <h2>Every silent machine has a story.</h2>
+      <a class="go" href="fleet.html">Start exploring</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="index.html"><span class="lg"></span>LunarSpark</a>
+        <p>Team LunarSpark, NASA Space Apps Challenge. Storytelling about NASA's discarded equipment on the Moon and Mars.</p>
+      </div>
+      <div>
+        <h4>The Moon</h4>
+        <a href="equipment/apollo-lunar-modules.html">Apollo Lunar Modules</a>
+        <a href="equipment/lunar-roving-vehicles.html">Lunar Roving Vehicles</a>
+        <a href="equipment/alsep-science-stations.html">ALSEP Science Stations</a>
+        <a href="equipment/surveyor-landers.html">Surveyor Landers</a>
+      </div>
+      <div>
+        <h4>Mars</h4>
+        <a href="equipment/sojourner-rover.html">Sojourner Rover</a>
+        <a href="equipment/spirit-and-opportunity.html">Spirit and Opportunity</a>
+        <a href="equipment/viking-1-and-2-landers.html">Viking 1 and 2 Landers</a>
+        <a href="equipment/phoenix-and-insight.html">Phoenix and InSight</a>
+        <a href="equipment/ingenuity-helicopter.html">Ingenuity Helicopter</a>
+      </div>
+      <div>
+        <h4>Deep space</h4>
+        <a href="equipment/dawn.html">Dawn</a>
+        <a href="equipment/near-shoemaker.html">NEAR Shoemaker</a>
+        <a href="equipment/pioneer-10-and-11.html">Pioneer 10 and 11</a>
+        <a href="equipment/kepler-space-telescope.html">Kepler Space Telescope</a>
+      </div>
+    </div>
+    <p class="fine">Mission text and images come from NASA (NSSDCA and NASA Science). Credit lines appear under each image: NASA, JPL-Caltech, Cornell, ASU and other mission partners.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

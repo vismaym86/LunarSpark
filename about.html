@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About and Sources | LunarSpark</title>
+  <meta name="description" content="NASA equipment left behind on the Moon, Mars and deep space, and the stories they tell.">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div id="bar"></div>
+  <div id="glow" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="logo" href="index.html"><span class="lg"></span>LunarSpark</a>
+    <button class="burger" aria-expanded="false">Menu</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fleet.html">The Fleet</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="about.html" aria-current="page">About and Sources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="phead">
+      <h1 class="h2l">About and sources</h1>
+    </section>
+
+    <section class="prose">
+      <h2>The challenge</h2>
+      <p>NASA Space Apps Challenge: <i>Abandoned but not Forgotten, Storytelling about NASA's Discarded Equipment on the Moon and Mars.</i> Team LunarSpark built this site to tell what each machine was, why it was left behind, and what it gave us.</p>
+      <h2>How to read an equipment page</h2>
+      <p>Every equipment page follows the same seven chapters: overview, where it began, the mission, how it worked, what it found, why it was left behind and where it is now. A timeline and the final status close each page. Photographs and extracts from NASA's mission pages sit inside the chapter they belong to.</p>
+      <h2>NASA sources</h2>
+      <ul class="src">
+        <li><a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C" target="_blank" rel="noopener">Apollo Lunar Modules</a></li>
+        <li><a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C" target="_blank" rel="noopener">Lunar Roving Vehicles</a></li>
+        <li><a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C" target="_blank" rel="noopener">ALSEP Science Stations</a></li>
+        <li><a href="https://science.nasa.gov/mission/surveyor-3/" target="_blank" rel="noopener">Surveyor Landers</a></li>
+        <li><a href="https://science.nasa.gov/mission/mars-pathfinder/" target="_blank" rel="noopener">Sojourner Rover</a></li>
+        <li><a href="https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/" target="_blank" rel="noopener">Spirit and Opportunity</a></li>
+        <li><a href="https://science.nasa.gov/mission/viking-1/" target="_blank" rel="noopener">Viking 1 and 2 Landers</a></li>
+        <li><a href="https://science.nasa.gov/mission/insight/" target="_blank" rel="noopener">Phoenix and InSight</a></li>
+        <li><a href="https://science.nasa.gov/mission/dawn/" target="_blank" rel="noopener">Dawn</a></li>
+        <li><a href="https://science.nasa.gov/mission/near-shoemaker/" target="_blank" rel="noopener">NEAR Shoemaker</a></li>
+        <li><a href="https://science.nasa.gov/mission/pioneer-10/" target="_blank" rel="noopener">Pioneer 10 and 11</a></li>
+        <li><a href="https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/" target="_blank" rel="noopener">Ingenuity Helicopter</a></li>
+        <li><a href="https://science.nasa.gov/mission/kepler/" target="_blank" rel="noopener">Kepler Space Telescope</a></li>
+      </ul>
+      <p>Primary catalog: <a target="_blank" rel="noopener" href="https://nssdc.gsfc.nasa.gov/">NASA Space Science Data Coordinated Archive (NSSDCA)</a>.</p>
+      <h2>Images</h2>
+      <p>Photographs and diagrams are from NASA and its mission teams (JPL-Caltech, Cornell, ASU, Lockheed Martin and others). Credit lines are shown under the images where NASA provides them.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="index.html"><span class="lg"></span>LunarSpark</a>
+        <p>Team LunarSpark, NASA Space Apps Challenge. Storytelling about NASA's discarded equipment on the Moon and Mars.</p>
+      </div>
+      <div>
+        <h4>The Moon</h4>
+        <a href="equipment/apollo-lunar-modules.html">Apollo Lunar Modules</a>
+        <a href="equipment/lunar-roving-vehicles.html">Lunar Roving Vehicles</a>
+        <a href="equipment/alsep-science-stations.html">ALSEP Science Stations</a>
+        <a href="equipment/surveyor-landers.html">Surveyor Landers</a>
+      </div>
+      <div>
+        <h4>Mars</h4>
+        <a href="equipment/sojourner-rover.html">Sojourner Rover</a>
+        <a href="equipment/spirit-and-opportunity.html">Spirit and Opportunity</a>
+        <a href="equipment/viking-1-and-2-landers.html">Viking 1 and 2 Landers</a>
+        <a href="equipment/phoenix-and-insight.html">Phoenix and InSight</a>
+        <a href="equipment/ingenuity-helicopter.html">Ingenuity Helicopter</a>
+      </div>
+      <div>
+        <h4>Deep space</h4>
+        <a href="equipment/dawn.html">Dawn</a>
+        <a href="equipment/near-shoemaker.html">NEAR Shoemaker</a>
+        <a href="equipment/pioneer-10-and-11.html">Pioneer 10 and 11</a>
+        <a href="equipment/kepler-space-telescope.html">Kepler Space Telescope</a>
+      </div>
+    </div>
+    <p class="fine">Mission text and images come from NASA (NSSDCA and NASA Science). Credit lines appear under each image: NASA, JPL-Caltech, Cornell, ASU and other mission partners.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

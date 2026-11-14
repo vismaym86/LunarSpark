@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Fleet | LunarSpark</title>
+  <meta name="description" content="NASA equipment left behind on the Moon, Mars and deep space, and the stories they tell.">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div id="bar"></div>
+  <div id="glow" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="logo" href="index.html"><span class="lg"></span>LunarSpark</a>
+    <button class="burger" aria-expanded="false">Menu</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fleet.html" aria-current="page">The Fleet</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="about.html">About and Sources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="phead">
+      <h1 class="h2l">The fleet</h1>
+      <p class="lede">Choose a machine to open its full story on its own page.</p>
+      <div class="tools">
+        <div class="tabs" id="tabs"></div>
+        <input id="q" type="search" placeholder="Search machines" aria-label="Search machines">
+      </div>
+    </section>
+
+    <section class="grid" id="grid">
+      <a class="card" href="equipment/apollo-lunar-modules.html" data-cat="Moon" data-name="apollo lunar modules the spidery landers whose lower halves became launch pads." style="--c: #7fe0f0">
+        <div class="frame Moon" style="--c: #7fe0f0">
+  <img class="photo" src="assets/images/apollo-lunar-modules.jpg" alt="Apollo Lunar Modules" loading="lazy">
+</div>
+        <div class="cb">
+          <small>The Moon &middot; 1969-1972</small>
+          <h3>Apollo Lunar Modules</h3>
+          <p>The spidery landers whose lower halves became launch pads.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/lunar-roving-vehicles.html" data-cat="Moon" data-name="lunar roving vehicles three battery-powered moon buggies, parked for good." style="--c: #7fe0f0">
+        <div class="frame Moon" style="--c: #7fe0f0">
+  <img class="photo" src="assets/images/lunar-roving-vehicle.jpg" alt="Lunar Roving Vehicles" loading="lazy">
+</div>
+        <div class="cb">
+          <small>The Moon &middot; 1971-1972</small>
+          <h3>Lunar Roving Vehicles</h3>
+          <p>Three battery-powered moon buggies, parked for good.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/alsep-science-stations.html" data-cat="Moon" data-name="alsep science stations automated labs that kept listening to the moon for years." style="--c: #7fe0f0">
+        <div class="frame Moon" style="--c: #7fe0f0">
+  <img class="photo" src="assets/images/alsep-science-stations.jpg" alt="ALSEP Science Stations" loading="lazy">
+</div>
+        <div class="cb">
+          <small>The Moon &middot; 1969-1977</small>
+          <h3>ALSEP Science Stations</h3>
+          <p>Automated labs that kept listening to the Moon for years.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/surveyor-landers.html" data-cat="Moon" data-name="surveyor landers robotic scouts that proved the moon was safe to land on." style="--c: #7fe0f0">
+        <div class="frame Moon" style="--c: #7fe0f0">
+  <img class="photo" src="assets/images/surveyor-landers.jpg" alt="Surveyor Landers" loading="lazy">
+</div>
+        <div class="cb">
+          <small>The Moon &middot; 1966-1968</small>
+          <h3>Surveyor Landers</h3>
+          <p>Robotic scouts that proved the Moon was safe to land on.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/sojourner-rover.html" data-cat="Mars" data-name="sojourner rover a microwave-sized rover that proved wheels could work on mars." style="--c: #ff8a4c">
+        <div class="frame Mars" style="--c: #ff8a4c">
+  <img class="photo" src="assets/images/sojourner-rover.jpg" alt="Sojourner Rover" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Mars &middot; 1997</small>
+          <h3>Sojourner Rover</h3>
+          <p>A microwave-sized rover that proved wheels could work on Mars.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/spirit-and-opportunity.html" data-cat="Mars" data-name="spirit and opportunity twin rovers built for 90 days. one lasted six years, the other fourteen." style="--c: #ff8a4c">
+        <div class="frame Mars" style="--c: #ff8a4c">
+  <img class="photo" src="assets/images/spirit-and-opportunity.jpg" alt="Spirit and Opportunity" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Mars &middot; 2004-2018</small>
+          <h3>Spirit and Opportunity</h3>
+          <p>Twin rovers built for 90 days. One lasted six years, the other fourteen.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/viking-1-and-2-landers.html" data-cat="Mars" data-name="viking 1 and 2 landers the first american robots to work on mars, searching for life." style="--c: #ff8a4c">
+        <div class="frame Mars" style="--c: #ff8a4c">
+  <img class="photo" src="assets/images/viking-1-and-2-landers.jpg" alt="Viking 1 and 2 Landers" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Mars &middot; 1976-1982</small>
+          <h3>Viking 1 and 2 Landers</h3>
+          <p>The first American robots to work on Mars, searching for life.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/phoenix-and-insight.html" data-cat="Mars" data-name="phoenix and insight one dug for ice, the other listened for marsquakes. both ran out of sunlight." style="--c: #ff8a4c">
+        <div class="frame Mars" style="--c: #ff8a4c">
+  <img class="photo" src="assets/images/phoenix-and-insight.jpg" alt="Phoenix and InSight" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Mars &middot; 2008-2022</small>
+          <h3>Phoenix and InSight</h3>
+          <p>One dug for ice, the other listened for marsquakes. Both ran out of sunlight.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/dawn.html" data-cat="Deep" data-name="dawn the first spacecraft to orbit two worlds, now a silent moon of ceres." style="--c: #b9a3ff">
+        <div class="frame Deep" style="--c: #b9a3ff">
+  <img class="photo" src="assets/images/dawn.jpg" alt="Dawn" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Deep space &middot; 2007-2018</small>
+          <h3>Dawn</h3>
+          <p>The first spacecraft to orbit two worlds, now a silent moon of Ceres.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/near-shoemaker.html" data-cat="Deep" data-name="near shoemaker built to orbit an asteroid. it landed on one too." style="--c: #b9a3ff">
+        <div class="frame Deep" style="--c: #b9a3ff">
+  <img class="photo" src="assets/images/near-shoemaker.jpg" alt="NEAR Shoemaker" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Deep space &middot; 1996-2001</small>
+          <h3>NEAR Shoemaker</h3>
+          <p>Built to orbit an asteroid. It landed on one too.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/pioneer-10-and-11.html" data-cat="Deep" data-name="pioneer 10 and 11 the first travellers to the outer planets, now drifting between stars." style="--c: #b9a3ff">
+        <div class="frame Deep" style="--c: #b9a3ff">
+  <img class="photo" src="assets/images/pioneer-10-and-11.jpg" alt="Pioneer 10 and 11" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Deep space &middot; 1972-2003</small>
+          <h3>Pioneer 10 and 11</h3>
+          <p>The first travellers to the outer planets, now drifting between stars.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/ingenuity-helicopter.html" data-cat="Mars" data-name="ingenuity helicopter the first aircraft to fly on another planet." style="--c: #ff8a4c">
+        <div class="frame Mars" style="--c: #ff8a4c">
+  <img class="photo" src="assets/images/ingenuity-helicopter.jpg" alt="Ingenuity Helicopter" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Mars &middot; 2021-2024</small>
+          <h3>Ingenuity Helicopter</h3>
+          <p>The first aircraft to fly on another planet.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+      <a class="card" href="equipment/kepler-space-telescope.html" data-cat="Deep" data-name="kepler space telescope a planet hunter that found more worlds than anyone expected." style="--c: #b9a3ff">
+        <div class="frame Deep" style="--c: #b9a3ff">
+  <img class="photo" src="assets/images/kepler-space-telescope.jpg" alt="Kepler Space Telescope" loading="lazy">
+</div>
+        <div class="cb">
+          <small>Deep space &middot; 2009-2018</small>
+          <h3>Kepler Space Telescope</h3>
+          <p>A planet hunter that found more worlds than anyone expected.</p>
+          <span class="more">Read the full story</span>
+        </div>
+      </a>
+    </section>
+    <p class="empty" id="empty" hidden>No machines match. Clear the search to see all of them.</p>
+  </main>
+
+  <footer>
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="index.html"><span class="lg"></span>LunarSpark</a>
+        <p>Team LunarSpark, NASA Space Apps Challenge. Storytelling about NASA's discarded equipment on the Moon and Mars.</p>
+      </div>
+      <div>
+        <h4>The Moon</h4>
+        <a href="equipment/apollo-lunar-modules.html">Apollo Lunar Modules</a>
+        <a href="equipment/lunar-roving-vehicles.html">Lunar Roving Vehicles</a>
+        <a href="equipment/alsep-science-stations.html">ALSEP Science Stations</a>
+        <a href="equipment/surveyor-landers.html">Surveyor Landers</a>
+      </div>
+      <div>
+        <h4>Mars</h4>
+        <a href="equipment/sojourner-rover.html">Sojourner Rover</a>
+        <a href="equipment/spirit-and-opportunity.html">Spirit and Opportunity</a>
+        <a href="equipment/viking-1-and-2-landers.html">Viking 1 and 2 Landers</a>
+        <a href="equipment/phoenix-and-insight.html">Phoenix and InSight</a>
+        <a href="equipment/ingenuity-helicopter.html">Ingenuity Helicopter</a>
+      </div>
+      <div>
+        <h4>Deep space</h4>
+        <a href="equipment/dawn.html">Dawn</a>
+        <a href="equipment/near-shoemaker.html">NEAR Shoemaker</a>
+        <a href="equipment/pioneer-10-and-11.html">Pioneer 10 and 11</a>
+        <a href="equipment/kepler-space-telescope.html">Kepler Space Telescope</a>
+      </div>
+    </div>
+    <p class="fine">Mission text and images come from NASA (NSSDCA and NASA Science). Credit lines appear under each image: NASA, JPL-Caltech, Cornell, ASU and other mission partners.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/fleet.js"></script>
+</body>
+</html>
