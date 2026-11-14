@@ -155,8 +155,9 @@ h1 {
 }
 
 h1 em {
-    color: var(--moon);
+    color: #e2531f;
     font-weight: 600;
+    text-shadow: 0 2px 14px rgba(6, 7, 12, .85);
 }
 
 @keyframes rise {
