@@ -1,0 +1,66 @@
+/* LunarSpark: small screens and reduced motion */
+
+@media (max-width: 800px) {
+    .burger {
+        display: block;
+    }
+
+    .top nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--void);
+        padding: 1rem 5vw;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav-open .top nav {
+        display: flex;
+    }
+
+    .ehero {
+        grid-template-columns: 1fr;
+    }
+
+    .tli {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .tli .frame {
+        display: none;
+    }
+
+    .fgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .moon {
+        opacity: .35;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .chapter figure,
+    .chapter figure.left,
+    .chapter figure.right {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
