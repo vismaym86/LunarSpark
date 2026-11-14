@@ -64,3 +64,15 @@
         margin: 1rem 0;
     }
 }
+
+html {
+    overflow-x: hidden;
+}
+
+/* the cursor glow and the radar rings are only needed with a mouse */
+@media (hover: none) {
+    #glow,
+    .ring {
+        display: none;
+    }
+}
